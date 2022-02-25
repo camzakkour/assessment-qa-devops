@@ -27,7 +27,7 @@ app.get('/', function(req,res) {
     res.sendFile(path.join(__dirname, './public/index.html'))
 })
 // app.use(express.static(path.join(__dirname, './public/index.css')))
-app.use(express.static(path.join(__dirname, '../')))
+app.use(express.static(path.join(__dirname, '../public')))
 
 
 app.get('/api/robots', (req, res) => {
