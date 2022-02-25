@@ -26,8 +26,8 @@ app.use(cors())
 app.get('/', function(req,res) {
     res.sendFile(path.join(__dirname, './public/index.html'))
 })
-app.use(express.static(path.join(__dirname, '../public/index.css')))
-app.use(express.static(path.join(__dirname, '../public/index.js')))
+app.use(express.static(path.join(__dirname, './public/index.css')))
+app.use(express.static(path.join(__dirname, './public/index.js')))
 
 
 app.get('/api/robots', (req, res) => {
